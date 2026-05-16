@@ -62,11 +62,17 @@ main nav .right-nav .icons {
   width: 20%;
 }
 main section {
+  position: relative;
   display: grid;
   grid-template-columns: 13% 2% 66% 2% 13%;
   grid-template-rows: 30% 20% 28% 20%;
   gap: 1%;
   grid-template-areas: "top-left center-top center-top center-top top-right" "top-left . Big-Center . top-right" "middle-left middle-left Big-Center middle-right middle-right" "bottom-left . Big-Center . bottom-right";
+}
+main section .star-img {
+  position: absolute;
+  height: 15%;
+  transform: translate(354%, 160%);
 }
 main section .top-left {
   grid-area: top-left;
@@ -189,12 +195,24 @@ main section .bottom-right .rose {
 main footer .top-footer {
   height: 30%;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 main footer .top-footer .quote {
-  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+main footer .top-footer .quote .quote-line {
   margin-bottom: 1%;
   font-size: 90%;
   font-family: "poppins", sans-serif;
+  display: block;
+}
+main footer .top-footer .date-card {
+  font-family: "poppins", sans-serif;
+  font-size: 11px;
+  margin-right: 9.35%;
+  line-height: 6.5;
 }
 main footer .bottom-footer {
   height: 70%;
